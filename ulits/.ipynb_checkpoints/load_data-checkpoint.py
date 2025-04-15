@@ -48,7 +48,7 @@ def load_roadmap(file_name):
 
 def load_champian():
     # Open the spreadhseet
-    sheet = client.open_by_key('1K5ZD_25IeXxGEKpGYTWsSYeETxOY7QILf3M5ziYwqgc')
+    sheet = client.open_by_key('1RNk7hRZjxR-ZIxdEzIDxCM3BUvDqILXZzfKHd5IY37o')
     
     # Initialize a dictionary to hold dataframes
     dataframes = {}
@@ -130,7 +130,7 @@ def get_champions(df_dict):
 
 def load_students_names():
     # Open the spreadhseet
-    sheet = client.open_by_key('1K5ZD_25IeXxGEKpGYTWsSYeETxOY7QILf3M5ziYwqgc')
+    sheet = client.open_by_key('1RNk7hRZjxR-ZIxdEzIDxCM3BUvDqILXZzfKHd5IY37o')
 
     for worksheet in sheet.worksheets():
         if 'Partcipation' == worksheet.title:
@@ -140,7 +140,7 @@ def load_students_names():
 
 def load_esraa_cards():
     # Open the spreadhseet
-    sheet = client.open_by_key('1K5ZD_25IeXxGEKpGYTWsSYeETxOY7QILf3M5ziYwqgc')
+    sheet = client.open_by_key('1RNk7hRZjxR-ZIxdEzIDxCM3BUvDqILXZzfKHd5IY37o')
     
     df = []
     for worksheet in sheet.worksheets():
