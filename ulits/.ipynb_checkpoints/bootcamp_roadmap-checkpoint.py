@@ -46,7 +46,7 @@ ITEMS_NUMBERS = {
 }
 
 # Get today's date
-start_course_date = datetime(2025, 1, 26).date()
+start_course_date = datetime(2025, 4, 20).date()
 
 def get_week_no(date):
     # Calculate the difference in days between the two dates
@@ -59,7 +59,7 @@ def get_week_no(date):
 
 # @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap('Bootcamp Jan 2025 - TOC')
+    df = ld.load_roadmap('Bootcamp Apr 2025 - TOC')
     #df['Date'] = pd.to_datetime(df['Date'])
     return df
 
